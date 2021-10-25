@@ -1,13 +1,10 @@
-package com.jdlm.web.app.webapp;
+package com.jdlm.web.app.webapp.repository;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import com.jdlm.web.app.webapp.model.Employee;
 import com.jdlm.web.app.webapp.model.Project;
 import com.jdlm.web.app.webapp.model.Role;
-import com.jdlm.web.app.webapp.repository.IEmployeeJpaRepository;
-import com.jdlm.web.app.webapp.repository.IProjectJpaRepository;
-import com.jdlm.web.app.webapp.repository.IRoleJpaRepository;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

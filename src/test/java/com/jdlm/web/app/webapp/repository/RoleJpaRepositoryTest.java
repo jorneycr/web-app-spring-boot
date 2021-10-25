@@ -1,10 +1,9 @@
-package com.jdlm.web.app.webapp;
+package com.jdlm.web.app.webapp.repository;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import com.jdlm.web.app.webapp.model.Role;
-import com.jdlm.web.app.webapp.repository.IRoleJpaRepository;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +13,7 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
 @DataJpaTest
 @AutoConfigureTestDatabase(replace = Replace.NONE)
-public class RoleJpaTest {
+public class RoleJpaRepositoryTest {
     
     @Autowired
     private IRoleJpaRepository repoRole;
