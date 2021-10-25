@@ -9,4 +9,4 @@
 
 ## Develop with maven
 
-## `paleta de configuration/maven/excute command/custom/test “-Dspring.profiles.active=dev"`
+## `paleta of configuration/maven/excute command/custom/test “-Dspring.profiles.active=dev"`
