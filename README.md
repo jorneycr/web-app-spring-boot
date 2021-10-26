@@ -5,8 +5,8 @@
 ## `docker-compose up -d `
 
 ## Production with maven
-## `paleta of configuration/maven/excute command/custom/test “-Dspring.profiles.active=prod1” OR`
+## `palet of configuration/maven/excute command/custom/test “-Dspring.profiles.active=prod1” OR`
 
 ## Develop with maven
 
-## `paleta of configuration/maven/excute command/custom/test “-Dspring.profiles.active=dev"`
+## `palet of configuration/maven/excute command/custom/test “-Dspring.profiles.active=dev"`
