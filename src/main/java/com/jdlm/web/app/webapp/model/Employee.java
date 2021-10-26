@@ -3,7 +3,6 @@ package com.jdlm.web.app.webapp.model;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -35,18 +34,13 @@ public class Employee {
     private String employeeid;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name="id_role")
+    @JoinColumn(name = "id_role")
     private Role role;
 
-    @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "employee_project", 
-             joinColumns = { @JoinColumn(name = "employee_id") }, 
-             inverseJoinColumns = { @JoinColumn(name = "project_id") })
+    @ManyToMany()
+    @JoinTable(name = "employee_project", joinColumns = { @JoinColumn(name = "employee_id") }, inverseJoinColumns = {
+            @JoinColumn(name = "project_id") })
     private List<Project> projects = new ArrayList<Project>();
-
-    public Employee() {
-    }
- 
 
     public Employee(String firstName, String lastName, String employeeid, Role role) {
         this.firstName = firstName;
@@ -55,4 +49,7 @@ public class Employee {
         this.role = role;
     }
 
+    public Employee() {
+    }
+    
 }

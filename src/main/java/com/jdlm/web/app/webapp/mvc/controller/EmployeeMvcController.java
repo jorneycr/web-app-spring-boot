@@ -36,12 +36,12 @@ public class EmployeeMvcController {
 
         List<EmployeeDTO> employees = employeeService.getAll();
         List<ProjectDTO> projects = projectService.getAll();
-        List<RoleDto> listRoles = roleService.getAll();
+        List<RoleDto> roles = roleService.getAll();
 
         var params = new HashMap<String, Object>();
         params.put("listEmployees", employees);
         params.put("listProjects", projects);
-        params.put("listRoles", listRoles);
+        params.put("listRoles", roles);
 
         return new ModelAndView("employees", params);
 
